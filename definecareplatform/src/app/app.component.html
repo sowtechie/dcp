@@ -1,0 +1,37 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div style="display: flex; flex-direction: row; justify-content: space-around"></div>
+<div style="text-align:left">
+  <h1 >
+      <IMG SRC="assets/logo123.png" ALT="some text" WIDTH=60 HEIGHT=40>
+     {{ title }}
+  </h1>
+ 
+  <mat-toolbar>
+    <div class='menu-toolbar-wrapper'>
+        <div>
+           <button mat-raised-button color="primary">Home</button>
+        </div>
+        <div>
+          <button mat-raised-button color="primary" [routerLink]="'/newPatient'">New Patient</button>
+       </div>
+        <div>
+          <button mat-raised-button color="primary"> Insurance Basics</button> 
+        </div>
+        <div>
+          <button mat-raised-button color="primary"> Find a Doctor/Hospital</button> 
+        </div>
+        <div> <button mat-raised-button color="primary">Log In/Sign Up</button></div>
+
+    </div>
+    
+
+  </mat-toolbar>
+  
+  <!-- <mat-radio-group>
+    <mat-radio-button value="1" (click)="selectPhone(5)">IPhone5</mat-radio-button>
+    <mat-radio-button value="2" (click)="selectPhone(8)">IPhone8</mat-radio-button>
+  </mat-radio-group> -->
+<router-outlet></router-outlet>
+
+<!-- <app-footer class="apphtml-footer"></app-footer> -->

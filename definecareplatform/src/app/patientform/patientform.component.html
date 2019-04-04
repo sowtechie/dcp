@@ -1,0 +1,26 @@
+<div class="main-content">
+  <div class="flex-container">
+    <div>
+      <mat-toolbar>New Patient Form</mat-toolbar>
+      <app-patient (patientFromChildUpdated)="patientUpdated($event)"></app-patient>
+    </div>
+    <div>
+      <mat-toolbar>Policy information</mat-toolbar>
+      <app-policy [policy]="selectedPolicy" (policyFromChildUpdated)="policyUpdated($event)"></app-policy>
+    </div>
+    <div>
+      <div>
+        <mat-toolbar>Advertisements</mat-toolbar>
+        <div style="padding-left: 12px;padding-right: 12px;">
+          <div *ngFor="let ad of ads" style="margin-top: 8px; margin-bottom: 8px">
+            <a href={{ad.link}}>{{ad.shortText}}</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <app-contact [contact]=contact></app-contact>
+      </div>
+    </div>
+  </div>
+  <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+</div>

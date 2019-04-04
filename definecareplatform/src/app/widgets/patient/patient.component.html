@@ -1,0 +1,14 @@
+<form *ngIf="patientForm" [formGroup]="patientForm">
+  <div class="flex-container_col">
+    <div class="pt-1">
+      <mat-form-field>
+        <input matInput formControlName="name" placeholder="Name">
+      </mat-form-field>
+    </div>
+    <div class="py-1">
+      <mat-form-field>
+        <input matInput formControlName="age" placeholder="Age">
+      </mat-form-field>
+    </div>
+  </div>
+</form>

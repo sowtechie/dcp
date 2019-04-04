@@ -1,0 +1,26 @@
+<form [formGroup]="policyForm">
+  <div class="flex-container_col" style="padding-top: 12px">
+    <mat-select placeholder="Policy Type" formControlName="selectedPolicy">
+      <mat-option *ngFor="let policy of policies" [value]="policy">
+        {{policy}}
+      </mat-option>
+    </mat-select>
+
+    <div style="margin-top: 12px;">
+      Price: {{policy?.price}}
+      <div style="margin-top: 12px; border: solid #5B6DCD 1px; padding: 8px;">
+        <h2>Coverage</h2>
+        <mat-divider></mat-divider>
+        <h4>Branded Drugs</h4>
+        <div *ngFor="let brandedDrug of policy?.drugs?.brandedDrugs">
+          {{brandedDrug}}
+        </div>
+        <mat-divider></mat-divider>
+        <h4>Generic Drugs</h4>
+        <div *ngFor="let drug of policy?.drugs?.genericDrugs">
+          {{drug}}
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+html {
+    min-height: 100%;
+    font-size: 12px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.flex-container_col {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.pt-1 {
+    padding-top: 4px;
+}
+
+.py-1 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.main-content {
+    padding-top: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    @media screen and (min-width: 1080px) {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
