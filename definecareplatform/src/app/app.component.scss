@@ -1,17 +1,16 @@
 
-h1{
-    font-family: verdana;
+h1 {
+  font-family: verdana;
   font-size: 12px;
-color:blue;
+  color:blue;
 }
+
 .menu-toolbar-wrapper{
   display: flex;
-   justify-content: space-between;
-   width:100%;
-   color: blue;
-   text-decoration-style: dotted;
-   
-  
+  justify-content: space-between;
+  width:100%;
+  color: blue;
+  text-decoration-style: dotted;
 }
 
 .apphtml-footer {
@@ -24,4 +23,24 @@ color:blue;
 
 .mat-radio-button {
   margin-left: 16px;
+}
+
+.main-section {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 24px;
+}
+
+.example-viewport {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+}
+ 
+.example-item {
+  padding: 25px;
+  background: grey;
+  margin-bottom: 2px;
+  text-align: center;
+  font-size: 30px;
 }

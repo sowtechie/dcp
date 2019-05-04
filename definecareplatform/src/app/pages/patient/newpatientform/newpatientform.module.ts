@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PatientformComponent } from './patientform.component';
+import { PatientformComponent } from './newpatientform.component';
 import { RouterModule } from '@angular/router';
 import { MatInputModule, MatButtonModule, MatToolbarModule } from '@angular/material';
-import { ReactiveFormsModule } from '@angular/forms';
-import { PatientModule } from '../widgets/patient/patient.module';
-import { PolicyModule } from '../widgets/policy/policy.module';
-import { ContactModule } from '../widgets/contact/contact.module';
+import { PatientModule } from 'src/app/widgets/patient/patient.module';
+import { PolicyModule } from 'src/app/widgets/policy/policy.module';
+import { ContactModule } from 'src/app/widgets/contact/contact.module';
 
 let routes = [
   {
     path: '',
-    component: PatientformComponent
+    component:  PatientformComponent
   }
 ];
 

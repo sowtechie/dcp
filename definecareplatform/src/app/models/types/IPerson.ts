@@ -3,8 +3,8 @@ import { IAddress } from './IAddress';
 export interface IPerson {
     name;
     id;
-    emailId;
-    phNo;
+    emailId?;
+    phNo?;
     address?: IAddress;
-    role:string;
+    role?:string;
 }

@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { PatientService } from '../services/patient.service';
-import { PolicyService } from '../services/policy.service';
+import { PatientService } from 'src/app/services/patient.service';
+import { PolicyService } from 'src/app/services/policy.service';
+
 
 @Component({
   selector: 'app-patientform',
-  templateUrl: './patientform.component.html',
-  styleUrls: ['./patientform.component.scss']
+  templateUrl: './newpatientform.component.html',
+  styleUrls: ['./newpatientform.component.scss']
 })
 export class PatientformComponent implements OnInit {
 

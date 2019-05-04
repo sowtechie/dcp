@@ -8,7 +8,7 @@ export let getPolicyInfo = function(req, res, next) {
         if (err) {
             res.json({message: 'Unable to fetch Policy document due to an error' + err});
         } else {
-            res.json({thisismypfoli: policy});
+            res.json({thisismypolicy: policy});
         }
     });
 };

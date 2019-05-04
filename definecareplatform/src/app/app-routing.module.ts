@@ -3,9 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'newPatient',
-    loadChildren: './patientform/patientform.module#PatientformModule',
-  }
+    path: '',
+    loadChildren: './pages/home/home.module#HomeModule'
+  },
+  {
+    path: 'patientpage',
+    loadChildren: './pages/patient/patient.module#PatientModule'
+  },
+  
 ];
 
 @NgModule({

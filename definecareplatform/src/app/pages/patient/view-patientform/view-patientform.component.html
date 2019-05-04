@@ -1,0 +1,15 @@
+<mat-form-field appearance="outline">
+  <mat-label>Search</mat-label>
+  <input [(ngModel)]='patientId' matInput placeholder="Patient ID">
+  <mat-icon (click)='searchPatient()' matSuffix>search</mat-icon>
+  <mat-hint>Enter Patient Id</mat-hint>
+</mat-form-field>
+<div class='box'>
+  <h2>Search Results</h2>
+  <hr>
+  <div *ngIf="patient">
+    <div style="padding-top: 8px;">Patient Id: {{patient.id}}</div>
+    <div>Patient Name: {{patient.name}}</div>
+  </div>
+  <div *ngIf="!patient">No Results Found</div>
+</div>

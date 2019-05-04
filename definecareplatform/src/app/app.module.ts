@@ -13,7 +13,8 @@ import { PatientService } from './services/patient.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PolicyService } from './services/policy.service';
 import { HttpModule } from '@angular/http';
-
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,8 @@ import { HttpModule } from '@angular/http';
     MatRadioModule,
     FooterModule,
     SearchModule,
+    DragDropModule ,
+    ScrollingModule
 
   ],
   providers: [AppDataService, PatientService, PolicyService],
