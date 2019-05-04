@@ -1,3 +1,5 @@
 /definecareplatform/node_modules
 /dcp-backend-policy/node_modules
 /dcp-backend-patient/node_modules
+/dcp-backend-admins/node_modules
+/dcp-backend-providers/node_modules
