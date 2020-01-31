@@ -16,6 +16,11 @@ const routes: Routes = [
     loadChildren: './pages/patient/patient.module#PatientModule'
   },
   
+  {
+    path: 'doctorpage',
+    loadChildren: './doctor/doctor.module#DoctorModule'
+  },
+  
 ];
 
 @NgModule({

@@ -1,0 +1,14 @@
+<div class='flex-container'>
+  <div>
+    <div class='view-patient'>
+      <button class='mini-button' mat-raised-button color="primary" [routerLink]="'/doctorpage/find-doctor'">Find Doctor</button>
+    </div>
+    <div>
+      <button class='mini-button' mat-raised-button color="primary" [routerLink]="'/doctorpage/find-hospital'">Find Hospital</button>
+    </div>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

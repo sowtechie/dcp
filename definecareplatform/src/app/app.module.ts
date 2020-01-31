@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppDataService } from './services/app-data.service';
 import { FooterModule } from './footer/footer.module';
@@ -15,9 +15,15 @@ import { PolicyService } from './services/policy.service';
 import { HttpModule } from '@angular/http';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { ProductListsComponent } from './product/product-lists/product-lists.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
+    ProductListsComponent,
+
+
     
   ],
   imports: [
@@ -28,7 +34,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     HttpClientModule,
 
     MatToolbarModule,
-    MatButtonModule, MatCheckboxModule,
+    MatButtonModule,
     AppRoutingModule,
     MatRadioModule,
     FooterModule,

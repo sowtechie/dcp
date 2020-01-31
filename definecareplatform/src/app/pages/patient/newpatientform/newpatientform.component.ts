@@ -32,7 +32,7 @@ export class PatientformComponent implements OnInit {
   ngOnInit() {
   }
 
-  patientUpdated(patientChanges) {
+  personUpdated(patientChanges) {
     this.patientFormData['patient'] = patientChanges;
     console.log('from parent form, changes are -> ', this.patientFormData)
   }
